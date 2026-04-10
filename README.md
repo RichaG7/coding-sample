@@ -2,7 +2,7 @@ This repository contains the code for the analyses run for the study "Racializin
 
 Tweets mentioning Asia or Asian people from a year before the outbreak of COVID-19 to more than a year after the outbreak were collected. A binary variable categorizing each day into “pre outbreak” or a “post outbreak” was created. The number of articles published about the pandemic by the New York Times was also collected. 
 
-I then conducted a sentiment analysis by regressing the sentiment of the collected tweets on whether they were published before or after the outbreak and on the number of articles published about the pandemic per day. I did the same with proportions of stereotypic words in the tweets. Finally, I conducted an implicit bias test using word embeddings.
+I conducted a sentiment analysis by regressing the sentiment of the collected tweets on whether they were published before or after the outbreak and on the number of articles published about the pandemic per day. I did the same with proportions of stereotypic words in the tweets. Finally, I conducted an implicit bias test using word embeddings.
 
 In order to identify implicit bias, I followed the same procedure as Kurdi and colleagues (2019). I obtained vectors of warmth- and competence-conveying stereotypes about Asian people that were mentioned in the tweets. I then compared the difference between the category vector and the warm stereotype vector to the difference between the category vector and the competent stereotype vector. The vectors were shuffled to create permutations of likely relationships in the vector space. Proportion of permutations where the effect size of the difference between the differences remained above 0 became our alpha value. 
 
